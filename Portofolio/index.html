@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mutia's Portfolio</title>
+
+    <!-- Untuk menyambungkan seluruh item yang akan dihubungkan ke dalam file -->
+     <!-- Icon -->
+    <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/Portofolio/cs/style.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asap:ital,wdth,wght@0,94,700;1,94,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="nav-logo">muthiep</div>
+      <div class="nav-item">
+        <a href="#hero">Home</a>
+        <a href="#about-me">About me</a>
+        <a href="#skills">Skill</a>
+        <a href="#projects">Project</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav-icons">
+        <a href="https://github.com/muthiep"
+          ><iconify-icon icon="mdi:github"></iconify-icon
+        ></a>
+        <a href="https://instagram.com"
+          ><iconify-icon icon="mdi:instagram"></iconify-icon
+        ></a>
+        <a href="https://twitter.com"
+          ><iconify-icon icon="pajamas:twitter"></iconify-icon
+        ></a>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <h2>Welcome</h2>
+      <h1>Mutia's</h1>
+      <h3>Portfolio Website</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <a href="#about-me"><button class="btn">Get Started</button></a>
+    </section>
+
+    <!-- ABOUT -->
+   <section id="about-me" class="about-me">
+    <div class="left">
+    <h3>Hello! I'm</h3>
+    <h1 class="name">Hafizah Mutiah Zahrah </h1>
+    <a href="" download class="btn">Download CV</a>
+  </div>
+
+  <div class="me">
+    <img src="/Portofolio/assets/IMG_5881 (1) (1).png" alt="profile">
+  </div>
+
+  <div class="right">
+    <h3 class="andim">And I'm</h3>
+    <h4 class="job">Web Developer</h4>
+    <p class="desc">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum accusantium repudiandae provident quas mollitia delectus!
+    </p>
+  </div>
+</section>
+    <!-- SKILLS -->
+    <section id="skills" class="skills">
+      <h2 class="title">My Skill</h2>
+
+      <div class="my-skill">
+        <!-- 1 -->
+        <div class="skill-card">
+          <iconify-icon class="skill-icon" icon="devicon:figma"></iconify-icon>
+          <h3>Figma</h3>
+        </div>
+
+        <!-- 2 -->
+        <div class="skill-card">
+          <iconify-icon
+            class="skill-icon"
+            icon="logos:adobe-illustrator"
+          ></iconify-icon>
+          <h3>Adobe Illustrator</h3>
+        </div>
+
+        <!-- 3 -->
+        <div class="skill-card">
+          <iconify-icon
+            class="skill-icon"
+            icon="logos:typescript-icon"
+          ></iconify-icon>
+          <h3>Typescript</h3>
+        </div>
+
+        <!-- 4 -->
+        <div class="skill-card">
+          <iconify-icon class="skill-icon" icon="logos:css-3"></iconify-icon>
+          <h3>CSS</h3>
+        </div>
+
+        <!-- 5 -->
+        <div class="skill-card">
+          <iconify-icon
+            class="skill-icon"
+            icon="vscode-icons:file-type-html"
+          ></iconify-icon>
+          <h3>HTML</h3>
+        </div>
+
+        <!-- 6 -->
+        <div class="skill-card">
+          <iconify-icon
+            class="skill-icon"
+            icon="lineicons:nodejs-alt"
+          ></iconify-icon>
+          <h3>Node.js</h3>
+        </div>
+      </div>
+
+      <div class="gradient">
+
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects">
+      <div class="circle"></div>
+      <h2 class="project-title">My Project</h2>
+
+      <div class="project-list" id="project-list">
+        <div class="project-item">
+          <img src="/Portofolio/assets/dicoding.png" />
+          <div class="project-text">
+            <h3>First Project</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+          <a class="btn-project" href="#">See Project</a>
+        </div>
+
+        <div class="project-item" id="project-list">
+          <img src="/Portofolio/assets/logo-01.jpg" />
+          <div class="project-text">
+            <h3>Second Project</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+          <a class="btn-project" href="#">See Project</a>
+        </div>
+
+        <div class="project-item" id="project-list">
+          <img src="/Portofolio/assets/Aset_karakter.png" />
+          <div class="project-text">
+            <h3>Third Project</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+          <a class="btn-project" href="#">See Project</a>
+      </div>
+
+      
+    </section>
+
+
+<section id="contact" class="contact">
+  <h2>Contact Me</h2>
+
+  <form  class="contact-form" action="https://formspree.io/f/xwpdvgzo" method="POST">
+    <input id="name" type="text" name="name" class="input-contact" placeholder="Your Name" required />
+    <input id="email" type="email" name="email" class="input-contact" placeholder="Your Email" required />
+    <input id="message" type="text" name="message" class="input-contact" placeholder="Your Message" required />
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <div class="text-footer">
+    <h3>Let's Connect To My Social Media</h3>
+  </div>
+  <div class="footer-icons">
+        <a href="https://github.com/muthiep"
+          ><iconify-icon icon="mdi:github"></iconify-icon
+        ></a>
+        <a href="https://instagram.com"
+          ><iconify-icon icon="mdi:instagram"></iconify-icon
+        ></a>
+        <a href="https://twitter.com"
+          ><iconify-icon icon="pajamas:twitter"></iconify-icon
+        ></a>
+      </div>
+  <p>2025 Made By Mutias</p>
+  <div class="persegi"></div>
+</footer>
+
+  </body>
+</html>

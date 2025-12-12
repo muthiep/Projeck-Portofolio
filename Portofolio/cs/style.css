@@ -1,0 +1,477 @@
+/* Keseluruhan */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 50px;
+  gap: 20px;
+  background-color: #000;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  padding: 20px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  color: white;
+  background: black;
+  
+}
+
+.navbar .nav-logo {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar .nav-item a {
+  font-family: "Inter", sans-serif;
+  margin: 0 20px;
+  font-size: 16px;
+  transition: 0.3s;
+  color: white;
+}
+
+.nav-item a:hover {
+  color: #ff6a00;
+}
+
+.nav-icons a{
+  font-size: 26px;
+  margin-left: 18px;
+  transition: 0.3s;
+  color: white;
+}
+
+.nav-icons a:hover {
+  color: #ff6a00;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  padding-top: 10rem;
+  text-align: center;
+}
+
+.hero h2 {
+  background: linear-gradient(to right, #ffffff 47%, #ffe580 20%, #ffcc00 52%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.hero h1 {
+  background: linear-gradient(to right, #ffffff 45%, #ffe580 20%, #ffcc00 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.hero h3 {
+    background: linear-gradient(to right, #ffffff 45%, #999999 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.hero p {
+  font-size: 16px;
+}
+
+.btn {
+  margin-top: 1rem;
+  /* margin-left: 16rem; */
+  padding: 8px 25px;
+  background: black;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #eee;
+  border: 2px solid #ffa200;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #ff6a00;
+}
+
+
+/* About me */
+.about-me {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+  background: linear-gradient(to bottom, #010101, #2b1a00);
+  color: white;
+}
+
+.about-me .left h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffb100;
+  margin-right: 30px;
+}
+
+.about-me .left h1{
+  margin-bottom: 2rem;
+}
+
+.about-me .me img {
+  width: 20rem;
+  filter: drop-shadow(0 0 10px #000);
+  margin-left: 2rpx;
+}
+
+.about-me .right .andim {
+  font-size: 28px;
+}
+
+.about-me .right .job {
+  font-size: 32px;
+  color: #ffa200;
+}
+
+.about-me .right .desc {
+  margin-top: 15px;
+  width: 350px;
+  line-height: 1.5;
+  color: #e0e0e0;
+  text-align: justify;
+}
+
+
+
+/* My skill */
+.skills {
+  height: 100vh;          
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+}
+
+.skills .title{
+  font-size: 3rem;
+  margin-right: 4rem;
+  background: linear-gradient(to right, #4A636C, #F36C05);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.my-skill {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.skill-card {
+  text-align: center;
+  transition: 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+}
+
+.skill-icon {
+  font-size: 5rem;
+}
+
+.skill-card h3 {
+  margin-bottom: 10px;
+}
+
+.skills .gradient{
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  right: -120px;   /* geser ke kanan */
+  bottom: -120px;  /* geser ke bawah */
+  background:#90BFD2;
+  filter: blur(15rem);
+  z-index: 0; /* supaya di belakang konten */
+}
+
+/* My project */
+.projects {
+  text-align: center;
+  padding: 80px 0;        /* ganti height 100vh */
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.circle{
+  position: absolute;
+  top: -120px;        /* geser ke atas */
+  left: -120px;      /* geser ke kanan */
+  width: 350px;
+  height: 350px;
+  background: #4A636C;   /* warna glow (ubah sesuai selera) */
+  border-radius: 50%;
+  filter: blur(180px);   /* blur glow */
+  opacity: 0.6;
+  z-index: -1;     
+}
+/* Title */
+.project-title {
+  font-size: 48px;
+  margin-bottom: 60px;
+  background: linear-gradient(to right, #4A636C 45%, #F36C05 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* Grid */
+.project-list {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 35px;
+  margin-top: 20px;
+
+}
+
+/* Card */
+.project-item {
+  transition: 0.3s;
+}
+
+.project-item:hover {
+  transform: translateY(-10px);
+}
+
+/* Image */
+.project-item img {
+  width: 100%;
+  height: 190px;
+  object-fit: contain;      /* cover lebih bagus untuk thumbnail */
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.project-text{
+  margin-bottom: 30px;
+}
+
+.project-text .p {
+  text-align: justify;
+}
+/* Button */
+.btn-project {
+  padding: 8px 25px;
+  background: black;
+  border-radius: 20px;
+  font-size: 14px;
+  border: 2px solid #ffa200;
+  cursor: pointer;
+}
+
+.btn-project:hover {
+  background: #ff6a00;
+}
+/* Contact */
+
+.contact {
+  padding: 100px 0;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact h2 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+/* Form container */
+.contact-form {
+  width: 550px;
+  background: #ffffff0d;
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px #ffffff14;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Input field */
+.input-contact {
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 12px;
+  border: 1px solid #ffffff4d;
+  background: #ffffff1f;
+  color: #fff;
+  font-size: 16px;
+}
+
+footer {
+  padding: 40px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.text-footer h3 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
+  margin-top: 10px;
+}
+
+.footer-icons a {
+  font-size: 32px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+
+/* Layar hp */
+@media (max-width: 767px) {
+  /* NAVBAR */
+  .navbar {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 15px auto;
+    background: transparent;
+  }
+  .nav-item {
+    display: none;
+  }
+  .navbar-icons,
+  .footer-icons {
+    gap: 5px;
+  }
+  .nav-logo {
+    font-size: 18px;
+  }
+  /* Hero */
+  .hero {
+    padding-top: 12rem;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  .hero h2, .hero h3 {
+    font-size: 1.4rem;
+  }
+
+  .hero p {
+    width: 90%;
+    margin: auto;
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 7px 20px;
+    font-size: 13px;
+  }
+
+  /* About me */
+  .about-me {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-me .me img {
+    width: 14rem;
+    margin: 0;
+  }
+
+  .about-me .right .desc {
+    width: 90%;
+  }
+
+  /* Skills */
+  .skills {
+    flex-direction: column;
+    height: auto;
+    padding: 60px 0;
+    text-align: center;
+  }
+
+  .skills .title {
+    margin-right: 0;
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+
+  .my-skill {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skill-icon {
+    font-size: 3.5rem;
+  }
+
+  /* Project */
+  .project-title {
+    font-size: 35px;
+  }
+
+  .project-list {
+    grid-template-columns: 1fr;
+    margin: 1rem;
+  }
+
+  .project-item img {
+    height: 160px;
+  }
+
+  /* Contact */
+  .contact-form {
+    width: 90%;
+    padding: 25px;
+  }
+
+  .input-contact {
+    font-size: 14px;
+    padding: 12px 15px;
+  }
+
+  /* Footer */
+  .footer-icons a {
+    font-size: 28px;
+  }
+}
+  
